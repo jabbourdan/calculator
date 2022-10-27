@@ -27,6 +27,19 @@ subtract(){
     echo $answer
 }
 
+#multiply()-----------------------------------------------#
+#input : more than 1  integers
+#integers output : on integer as answer
+#---------------------------------------------------------#
+multiply(){
+    local answer=1
+    for mult in $@
+    do
+        let answer=$answer*$mult
+    done
+        echo $answer
+}
+
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
