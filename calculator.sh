@@ -13,6 +13,20 @@ add(){
         echo $answer
 }
 
+#subtract()-----------------------------------------------#
+#input : more than 1 integer
+#integers output : on integer as answer
+#---------------------------------------------------------#
+subtract(){
+    local answer=0
+    local index=1
+    for sub in $@
+    do
+    [ $index -eq 1 ] && answer=$sub && ((index++)) || let answer=$answer-$sub  #first time assign the first element to answer
+    done
+    echo $answer
+}
+
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
