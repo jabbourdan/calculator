@@ -40,6 +40,20 @@ multiply(){
         echo $answer
 }
 
+#divide()-------------------------------------------------#
+#input : more than 1 integer after the secound not zero
+#integers output : on integer as answer
+#---------------------------------------------------------#
+divide(){
+    local answer=0
+    local index=1
+    for div in $@
+    do
+        [ $index -eq 1 ] && answer=$div && ((index++)) || let answer=$answer/$div  #first time assign the first element to answer
+    done
+        echo $answer
+}
+
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
