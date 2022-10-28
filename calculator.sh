@@ -54,6 +54,39 @@ divide(){
         echo $answer
 }
 
+#power_of()-----------------------------------------------#
+#input : more than 1 integer
+#integers output : on integer as answer
+#---------------------------------------------------------#
+power_of(){
+    local answer=1
+    local index=1
+    for power in $@  # big loop
+    do
+    if [ $index -eq 1 ] 
+    then
+        answer=$power
+        ((index++))
+    elif [ $power -eq 0 ]
+    then
+        answer=1
+    else 
+    local count=1
+    while [ $count -lt $power ] # small loop
+    do
+        let answer=$answer*$answer
+        echo $answer
+        let count=$count+1
+    done
+    if [ $power -lt 0 ]
+    then
+        let answer=1/$answer
+    fi
+    fi
+    done
+
+echo $answer
+}
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
