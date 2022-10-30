@@ -85,8 +85,22 @@ power_of(){
     fi
     done
 
-echo $answer
+    echo $answer
 }
+
+#modulus()------------------------------------------------#
+#input : more than 1 integer
+#integers output : on integer as answer
+#---------------------------------------------------------#
+modulus(){
+    local answer=0
+    for mod in $@
+    do
+        let answer=$answer%$mod
+    done
+    echo $answer
+}
+
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
