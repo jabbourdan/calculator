@@ -101,6 +101,30 @@ modulus(){
     echo $answer
 }
 
+#is_prime()-----------------------------------------------#
+# input	: 1 number
+# output: echo is prime or echo is not prime
+#---------------------------------------------------------#
+is_prime(){
+    local number=$1
+    if [[ $number -lt 2 ]]
+    then
+        echo "$number is not a prime number"
+        return 0
+    else
+        local i=2
+    while [ $i -lt $number ] # i is al number less than our test number
+    do
+         if [[ `expr $number % $i` -eq 0 ]] #if the number divdable by any number less the it then it is not prime
+         then
+             echo "$number is not a prime"
+             return 0
+         fi
+         let i=$i+1
+    done
+    fi
+    echo "$number is a prime"
+}
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
