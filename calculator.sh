@@ -139,6 +139,20 @@ is_odd_even(){
         echo "$number is odd number"
     fi
 }
+
+#is_div_by_five()-----------------------------------------#
+# input  : 1 number
+# output : echo dividable or echo not dividable
+#---------------------------------------------------------#
+is_div_by_five(){
+    local number=$1
+    if (( $number % 5==0 ))
+    then
+        echo "$number is dividable by 5"
+    else
+        echo "$number is not dividable by 5"
+    fi
+}
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
