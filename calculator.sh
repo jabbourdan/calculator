@@ -125,6 +125,20 @@ is_prime(){
     fi
     echo "$number is a prime"
 }
+
+#is_odd_even()--------------------------------------------#
+# input  : 1 number
+# output : echo odd or echo even
+#---------------------------------------------------------#
+is_odd_even(){
+    local number=$1
+    if [ $((number%2)) -eq 0 ]
+    then
+        echo "$number is even number"
+    else
+        echo "$number is odd number"
+    fi
+}
 #display()------------------------------------------------#
 #this function get the answer and display it and another three options
 #input  : 1 number as answer
