@@ -1,53 +1,47 @@
 
+## The calculator :
 
-THE calculator :
-
-Build a simple program in Bash Scripting that can serve as a
+- ✌️ a simple program in Bash Scripting that can serve as a
 calculator.
-The program should work with a textual UI
-The program will start with a menu:
-    a. Add
-    b. Subtract
-    c. Multiply
-    d. Divide
-    e. Power of
-    f. Modulos
-    g. Exit
-After choosing a correct option in the menu (validate !)
-    a. An input prompt will ask for operation args.
-       attention - you need to validate the correctness of
-       the args (positive or negative integers) and verify
-       the number of the args according to the operator.
+
+## Technologies
+- ✨ bash-scripting
+## WorkFlow
+- 👨‍💻 The program will start with a menu: 
+
+        a. Add
+        b. Subtract
+        c. Multiply
+        d. Divide
+        e. Power of
+        f. Modulos
+        g. Exit
+
+- 🚀 After choosing a correct option in the menu (validated!) : 
+
+    a. An input prompt will ask for operation args. (validated!)
+    
+
     b. After input, the calculation should be done.
+
     c. The answer and some properties should be displayed
        (each property will be displayed in a separate
        line):
-        ■ The answer
-        ■ Whether the answer a prime number
-        ■ Whether the answer odd or even
-        ■ Whether the answer is divided by five without
-    a remainder.
-    d. After displaying answers, the menu should be
-       displayed once again - until Exit option is chosen.
 
+            ■ The answer
+            ■ Whether the answer a prime number
+            ■ Whether the answer odd or even
+            ■ Whether the answer is divided by five without
+    
+    d. After displaying answers, the menu displayed once again - until Exit option is chosen.
+## Functions
 
-
-Implementation:
-    You have to Validate the input (number).
-    ● Handle positive and negative symbols (+,-),
-    and spaces and any other character.
-    ● Implement and use the followıng functions
-        - add()
-        - subtract()
-        - multiply()
-        - divide()
-        - power of ()
-        - modulus % ()
-        - is_prime()
-        - is_odd_even()
-        - is_div_by_five()
-    ● Implement as many auxiliary functions as you
-    can.(input,input validation, menu Etc. )
-    ● You need to follow the rules of modular programming
-    (scoping - local/global, function modularity, interfaces
-    between functions - args/returned value Etc.)
+    - add()
+    - subtract()
+    - multiply()
+    - divide()
+    - power of ()
+    - modulus % ()
+    - is_prime()
+    - is_odd_even()
+    - is_div_by_five()
